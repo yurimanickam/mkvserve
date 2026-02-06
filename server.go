@@ -29,7 +29,7 @@ func main() {
 			return
 		}
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
-		_, err := w.Write([]byte("hola mundo"))
+		_, err := w.Write([]byte("hello world"))
 		if err != nil {
 			log.Printf("Response write error: %v", err)
 		}
